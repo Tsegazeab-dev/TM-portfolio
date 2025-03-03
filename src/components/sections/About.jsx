@@ -1,4 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { FaUserGraduate } from "react-icons/fa6";
+import { FaLaptop } from "react-icons/fa";
 
 export const About = () => {
   const frontendSkills = [
@@ -28,7 +30,8 @@ export const About = () => {
               Passionate web developer dedicated to creating high-quality,
               user-friendly digital solutions that deliver exceptional
               performance. I excel at transforming ideas into engaging websites
-              and applications that not only look great but also drive results. Every project meets your needs and exceeds expectations.
+              and applications that not only look great but also drive results.
+              Every project meets your needs and exceeds expectations.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -68,7 +71,11 @@ export const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
+              <h3 className="text-xl font-bold mb-4">
+                {" "}
+                <FaUserGraduate className="inline-block text-teal-400 mr-2"></FaUserGraduate>{" "}
+                Education{" "}
+              </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
                   <strong> Full stack web development (MERN) </strong> -
@@ -78,7 +85,11 @@ export const About = () => {
               </ul>
             </div>
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
+              <h3 className="text-xl font-bold mb-4">
+                {" "}
+                <FaLaptop className="inline-block text-teal-400 mr-2"></FaLaptop>{" "}
+                Work Experience{" "}
+              </h3>
               <div className="space-y-4 text-gray-300">
                 <div>
                   <h4 className="font-semibold">

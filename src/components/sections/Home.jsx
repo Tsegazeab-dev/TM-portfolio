@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import HeroImage from '../../assets/hero-image.jpg'
 
 export const Home = () => {
   return (
@@ -7,15 +8,21 @@ export const Home = () => {
       className="min-h-screen flex items-center justify-center relative"
     >
       <RevealOnScroll>
+        <img
+          src={HeroImage}
+          alt=""
+          className="mx-auto my-8 w-48 h-48 rounded-full object-cover transform 
+        transition-transform duration-300 hover:scale-105"
+        />
         <div className="text-center z-10 px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-teal-600 to-emerald-300 bg-clip-text text-transparent leading-right">
             Hi, I'm Tsegazeab
           </h1>
 
           <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            Full-stack web developer dedicated to crafting high-quality
-            digital products. I specialize in clean code, user-friendly design,
-            and seamless functionality, creating websites and applications that
+            Full-stack web developer dedicated to crafting high-quality digital
+            products. I specialize in clean code, user-friendly design, and
+            seamless functionality, creating websites and applications that
             excel in performance and aesthetics.
           </p>
           <div className="flex justify-center space-x-4">
